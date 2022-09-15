@@ -49,6 +49,25 @@
                       --- Selenium Webdriver manager (https://bonigarcia.dev/webdrivermanager/)
 
 
+###  ⚫ Step 8: Create a "config.properties" file under "configfiles" package and store browser, testurl there
+                      browser = chrome
+                      testurl = https://admin-demo.nopcommerce.com/
+                
+                
+###  ⚫ Step 9: Create a "ReadpropertyFile" class under "utilities" package to read the "config.properties. file
+
+
+###  ⚫ Step 10: Create a "BaseTest" class under "base" package
+                      --- Make a setUp method              //will run before each test
+                                --- Launch Driver
+                      --- Make a tearDown method           //will run after each test
+                                --- Close Driver
+                      
+                      
+###  ⚫ Step 11: Remove all hard coded file directory using "System.getProperty("user.dir")"
+                      Example: FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
+                      
+                      
 ## Possible errors handling in Eclipse
 #### Error 1: The compiler compliance specified is 1.8 but a JRE 15 is used
      Solution: Either ensure the proper JRE is there or go to the Windows->Preferences->Java->Compiler and make sure your compliance setting matches.
