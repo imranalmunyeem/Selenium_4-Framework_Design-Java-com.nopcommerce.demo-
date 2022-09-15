@@ -14,14 +14,14 @@
 ###  ⚫ Step 3: Download & Install Eclipse
                   https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
                 
-####            Set Eclipse as an Environment variable
+###  ⚫ Step 4:  Set Eclipse as an Environment variable
             
             
-###  ⚫ Step 4: Create a new maven project in Eclipse
+###  ⚫ Step 5: Create a new maven project in Eclipse
                   File -> New -> Project -> Maven Project       
                   
                   
-###  ⚫ Step 5: Create project structure
+###  ⚫ Step 6: Create project structure
                   src/test/java
                       --- base (package)
                             --- BaseTest (class)
@@ -37,7 +37,7 @@
                       -- testdata (package)
                       
                       
-###  ⚫ Step 6: Add below dependencies to "pom.xml"
+###  ⚫ Step 7: Add below dependencies to "pom.xml"
                       --- Selenium Webdriver         (https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
                       --- Test NG                    (https://mvnrepository.com/artifact/org.testng/testng)
                       --- Report NG                  (https://mvnrepository.com/artifact/org.uncommons/reportng)
