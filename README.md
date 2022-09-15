@@ -26,6 +26,7 @@
                       --- base (package)
                             --- BaseTest (class)
                       --- testcase (package)
+                            --- TestClass (class)
                       --- utilities (package)
                             --- ReadpropertyFile (class)  
                   src/test/java
