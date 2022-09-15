@@ -1,8 +1,26 @@
 # com.nopcommerce.demo
- Selenium framework design from scratch using Java
+### Selenium framework design from scratch using Java
+
+## Steps
+#### Step 1: Download & Install Java 8
+                https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
+                
+####         Set Java as an Environment variable
+            
+####         Check whether Java is installed. Write below command in CMD 
+                java -version 
 
 
-# Possible errors handling in Eclipse
+#### Step 2: Download & Install Eclipse
+                https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
+                
+####         Set Eclipse as an Environment variable
+            
+            
+#### Step 3: Create a new maven project in Eclipse
+                File -> New -> Project -> Maven Project
+                
+## Possible errors handling in Eclipse
 #### Error 1: The compiler compliance specified is 1.8 but a JRE 15 is used
      Solution: Either ensure the proper JRE is there or go to the Windows->Preferences->Java->Compiler and make sure your compliance setting matches.
 
