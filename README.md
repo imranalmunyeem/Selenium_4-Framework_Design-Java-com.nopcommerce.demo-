@@ -24,10 +24,13 @@
 ###  ⚫ Step 5: Create project structure
                   src/test/java
                       --- base (package)
+                            --- BaseTest (class)
                       --- testcase (package)
                       --- utilities (package)
+                            --- ReadpropertyFile (class)  
                   src/test/java
                       -- configfiles (package)
+                            --- config.properties (File)
                       -- logs (package)
                       -- reports (package)
                       -- testdata (package)
