@@ -47,7 +47,10 @@
                       --- Report NG                  (https://mvnrepository.com/artifact/org.uncommons/reportng)
                       --- Apache Log4j core          (https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core) 
                       --- Apache Log4j API           (https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api) 
-                      --- Apache POI common          (https://mvnrepository.com/artifact/org.apache.poi/poi) 
+                      --- Apache POI common          (https://mvnrepository.com/artifact/org.apache.poi/poi)
+                      --- poi-ooxml                  (https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml/5.2.2)
+                      --- xmlbeans                   (https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans/5.1.1)
+                      --- Apache Commons Collections (https://mvnrepository.com/artifact/org.apache.commons/commons-collections4/4.4)
                       --- Selenium Webdriver manager (https://bonigarcia.dev/webdrivermanager/)
 
 
