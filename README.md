@@ -32,11 +32,13 @@
                       --- utilities (package)
                             --- ReadpropertyFile (class)  
                   src/test/java
-                      -- configfiles (package)
+                      --- configfiles (package)
                             --- config.properties (File)
-                      -- logs (package)
-                      -- reports (package)
-                      -- testdata (package)
+                      --- logs (package)
+                      --- reports (package)
+                      --- testdata (package)
+                   testrunner (folder)
+                      --- testng.xml
                       
                       
 ###  ⚫ Step 7: Add below dependencies to "pom.xml"
@@ -45,7 +47,10 @@
                       --- Report NG                  (https://mvnrepository.com/artifact/org.uncommons/reportng)
                       --- Apache Log4j core          (https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core) 
                       --- Apache Log4j API           (https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api) 
-                      --- Apache POI common          (https://mvnrepository.com/artifact/org.apache.poi/poi) 
+                      --- Apache POI common          (https://mvnrepository.com/artifact/org.apache.poi/poi)
+                      --- poi-ooxml                  (https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml/5.2.2)
+                      --- xmlbeans                   (https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans/5.1.1)
+                      --- Apache Commons Collections (https://mvnrepository.com/artifact/org.apache.commons/commons-collections4/4.4)
                       --- Selenium Webdriver manager (https://bonigarcia.dev/webdrivermanager/)
 
 
@@ -68,6 +73,22 @@
                       Example: FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
                       
                       
+###  ⚫ Step 12: Externalize Locators from "Test Script" to "locators.properties" file and read that file from "BaseTest"
+                      --- It will load the locators from locators.properties instead of hardcoding them
+
+
+###  ⚫ Step 13: Create and use TestNG.XML(Test Runner) to make different test suits and run them
+                      --- Create a folder named "testrunner" to store the XML file inside it.
+                      --- Project ->TestNG ->Convert to TestNG ->Set location of "testrunner" folder ->Finish
+
+                      N.B: Make sure to install TestNG from eclipse marketplace
+                      
+                      
+###  ⚫ Step 14: Data Driven Testing with Excel file
+                      --- Make XLSX data file and store it under "testdata"
+                      --- Create a main class named "ReadXLSdata" under untilities to read the testdata from excel file.
+
+
 ## Possible errors handling in Eclipse
 #### Error 1: The compiler compliance specified is 1.8 but a JRE 15 is used
      Solution: Either ensure the proper JRE is there or go to the Windows->Preferences->Java->Compiler and make sure your compliance setting matches.
@@ -75,3 +96,8 @@
 
 #### Error 2: Build path specifies execution environment Java SE 1.7
      Solution:  In Eclipse -> your project-> properties -> java build path : Libraries ->Remove the "JRE System Library[J2SE 1.4]" -> click "Add Library" button -> JRE System Library -> select the new "Executin Environment" or Workspace default JRE
+
+
+#### Error 3: ID is null
+     Cause:  When the locators.properties file wwasn't loaded properly in "BaseTest" class
+     Solution:  Check whether you read and loaded the locators.properties file properly
