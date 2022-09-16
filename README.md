@@ -32,11 +32,13 @@
                       --- utilities (package)
                             --- ReadpropertyFile (class)  
                   src/test/java
-                      -- configfiles (package)
+                      --- configfiles (package)
                             --- config.properties (File)
-                      -- logs (package)
-                      -- reports (package)
-                      -- testdata (package)
+                      --- logs (package)
+                      --- reports (package)
+                      --- testdata (package)
+                   testrunner (folder)
+                      --- testng.xml
                       
                       
 ###  ⚫ Step 7: Add below dependencies to "pom.xml"
