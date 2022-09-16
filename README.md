@@ -84,7 +84,9 @@
                       N.B: Make sure to install TestNG from eclipse marketplace
                       
                       
-###  ⚫ Step 14: Data Driven Testing with TestNG DataProvider  
+###  ⚫ Step 14: Data Driven Testing with Excel file
+                      --- Make XLSX data file and store it under "testdata"
+                      --- Create a main class named "ReadXLSdata" under untilities to read the testdata from excel file.
 
 
 ## Possible errors handling in Eclipse
