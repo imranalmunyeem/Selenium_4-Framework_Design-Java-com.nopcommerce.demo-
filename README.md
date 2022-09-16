@@ -70,6 +70,11 @@
                       
 ###  ⚫ Step 12: Externalize Locators from "Test Script" to "locators.properties" file and read that file from "BaseTest"
                       --- It will load the locators from locators.properties instead of hardcoding them
+
+
+###  ⚫ Step 13: Create and use TestNG.XML(Test Runner) to make different test suits and run them
+                      --- Install TestNG from eclipse nmarketplace if it is not installed.
+                      
                       
 ## Possible errors handling in Eclipse
 #### Error 1: The compiler compliance specified is 1.8 but a JRE 15 is used
