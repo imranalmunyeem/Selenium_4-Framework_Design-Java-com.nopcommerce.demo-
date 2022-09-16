@@ -18,13 +18,18 @@ public class BaseTest {
 	
 	public static WebDriver driver;  //initialize driver
 	public static Properties property = new Properties();  //property object
-	public static FileReader file;     //file reader object
+	public static Properties locators = new Properties();  //property object
+	public static FileReader file1;      //config property file
+	public static FileReader file2;     // locator property file
 	
 	@BeforeTest  //will run before all the test
 	public void setUp() throws IOException {
 		if(driver==null) {
-			FileReader file = new FileReader("C:\\Users\\ialmu\\eclipse-workspace\\com.nopcommerce.demo\\src\\test\\resources\\configfiles\\config.properties"); //read the file
-			property.load(file);   //load the property file
+			file1 = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties"); //read the config file
+		    file2 = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\locators.properties"); //read the locators file
+
+			property.load(file1);   //load the config file
+			locators.load(file2);  //
 		}
 		
 		if(property.getProperty("browser").equalsIgnoreCase("chrome")) { //equalsIgnoreCase will ignore lower case or upper case typing mistake for browser names

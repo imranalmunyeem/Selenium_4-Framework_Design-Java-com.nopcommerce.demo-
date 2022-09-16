@@ -10,15 +10,15 @@ public class Login extends BaseTest {
 	
 	@Test
 	public void LoginTest() {
-		WebElement emailField = driver.findElement(By.id("Email"));
+		WebElement emailField = driver.findElement(By.id(locators.getProperty("email_field"))); //coming from locators.properties file
 		emailField.clear();
 		emailField.sendKeys("admin@yourstore.com");
 		
-		WebElement passwordField = driver.findElement(By.id("Password"));
+		WebElement passwordField = driver.findElement(By.id(locators.getProperty("password_field"))); ////coming from locators.properties file
 		passwordField.clear();
 		passwordField.sendKeys("admin");
 		
-		WebElement loginButton = driver.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button"));
+		WebElement loginButton = driver.findElement(By.xpath(locators.getProperty("login_button"))); ////coming from locators.properties file
 		loginButton.click();
 	}
 }
