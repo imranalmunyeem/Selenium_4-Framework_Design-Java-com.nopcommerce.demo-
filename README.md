@@ -73,7 +73,10 @@
 
 
 ###  ⚫ Step 13: Create and use TestNG.XML(Test Runner) to make different test suits and run them
-                      --- Install TestNG from eclipse nmarketplace if it is not installed.
+                      --- Create a folder named "testrunner" to store the XML file inside it.
+                      --- Project ->TestNG ->Convert to TestNG ->Set location of "testrunner" folder ->Finish
+
+                      N.B: Make sure to install TestNG from eclipse marketplace
                       
                       
 ## Possible errors handling in Eclipse
