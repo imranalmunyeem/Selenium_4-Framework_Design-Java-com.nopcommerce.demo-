@@ -5,6 +5,7 @@
 ###  ⚫ Step 1: Download & Install Java 8
                   https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
                 
+                
 ###  ⚫ Step 2: Set Java as an Environment variable
             
 ####            Check whether Java is installed. Write below command in CMD 
@@ -14,18 +15,20 @@
 ###  ⚫ Step 3: Download & Install Eclipse
                   https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
                 
-####            Set Eclipse as an Environment variable
+                
+###  ⚫ Step 4:  Set Eclipse as an Environment variable
             
             
-###  ⚫ Step 4: Create a new maven project in Eclipse
+###  ⚫ Step 5: Create a new maven project in Eclipse
                   File -> New -> Project -> Maven Project       
                   
                   
-###  ⚫ Step 5: Create project structure
+###  ⚫ Step 6: Create project structure
                   src/test/java
                       --- base (package)
                             --- BaseTest (class)
                       --- testcase (package)
+                            --- TestClass (class)
                       --- utilities (package)
                             --- ReadpropertyFile (class)  
                   src/test/java
@@ -36,7 +39,7 @@
                       -- testdata (package)
                       
                       
-###  ⚫ Step 6: Add below dependencies to "pom.xml"
+###  ⚫ Step 7: Add below dependencies to "pom.xml"
                       --- Selenium Webdriver         (https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
                       --- Test NG                    (https://mvnrepository.com/artifact/org.testng/testng)
                       --- Report NG                  (https://mvnrepository.com/artifact/org.uncommons/reportng)
@@ -46,6 +49,25 @@
                       --- Selenium Webdriver manager (https://bonigarcia.dev/webdrivermanager/)
 
 
+###  ⚫ Step 8: Create a "config.properties" file under "configfiles" package and store browser, testurl there
+                      browser = chrome
+                      testurl = https://admin-demo.nopcommerce.com/
+                
+                
+###  ⚫ Step 9: Create a "ReadpropertyFile" class under "utilities" package to read the "config.properties. file
+
+
+###  ⚫ Step 10: Create a "BaseTest" class under "base" package
+                      --- Make a setUp method              //will run before each test
+                                --- Launch Driver
+                      --- Make a tearDown method           //will run after each test
+                                --- Close Driver
+                      
+                      
+###  ⚫ Step 11: Remove all hard coded file directory using "System.getProperty("user.dir")"
+                      Example: FileReader file = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
+                      
+                      
 ## Possible errors handling in Eclipse
 #### Error 1: The compiler compliance specified is 1.8 but a JRE 15 is used
      Solution: Either ensure the proper JRE is there or go to the Windows->Preferences->Java->Compiler and make sure your compliance setting matches.
