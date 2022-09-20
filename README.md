@@ -1,6 +1,12 @@
 # com.nopcommerce.demo
 ### Selenium framework design from scratch using Java
 
+### This project contains the below features
+                 External Locators property        //This property file will contains the value of the locators [Alternative of page object and page factory]
+                 Page Object Pattern
+                 Page Factory Pattern
+                 Logging Feature
+                 Custom Test-Runner (TestNG.xml)
 ## Steps
 ###  ⚫ Step 1: Download & Install Java 8
                   https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
