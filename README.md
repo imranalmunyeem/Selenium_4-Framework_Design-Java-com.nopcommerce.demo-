@@ -39,12 +39,15 @@
                       --- testdata (package)
                    testrunner (folder)
                       --- testng.xml
+                   screenhots (folder)   
                       
                       
 ###  ⚫ Step 7: Add below dependencies to "pom.xml"
                       --- Selenium Webdriver         (https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java)
                       --- Test NG                    (https://mvnrepository.com/artifact/org.testng/testng)
                       --- Report NG                  (https://mvnrepository.com/artifact/org.uncommons/reportng)
+                      --- ExtentReports              (https://mvnrepository.com/artifact/com.aventstack/extentreports/5.0.9)
+                      --- log4j                      (https://mvnrepository.com/artifact/log4j/log4j/1.2.17)
                       --- Apache Log4j core          (https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core) 
                       --- Apache Log4j API           (https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api) 
                       --- Apache POI common          (https://mvnrepository.com/artifact/org.apache.poi/poi)
