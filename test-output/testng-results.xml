@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-20T15:56:15 BDT" name="Default suite" finished-at="2022-09-20T15:56:24 BDT" duration-ms="9072">
+  <suite started-at="2022-09-20T16:06:59 BDT" name="Default suite" finished-at="2022-09-20T16:07:07 BDT" duration-ms="8815">
     <groups>
     </groups>
-    <test started-at="2022-09-20T15:56:15 BDT" name="Default test" finished-at="2022-09-20T15:56:24 BDT" duration-ms="9072">
+    <test started-at="2022-09-20T16:06:59 BDT" name="Default test" finished-at="2022-09-20T16:07:07 BDT" duration-ms="8815">
       <class name="com.nopcommerce.demo.testCases.Login">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nopcommerce.demo.testCases.Login@d86a6f]" started-at="2022-09-20T15:56:15 BDT" name="setUp" finished-at="2022-09-20T15:56:18 BDT" duration-ms="3535" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.nopcommerce.demo.testCases.Login@d86a6f]" started-at="2022-09-20T16:06:59 BDT" name="setUp" finished-at="2022-09-20T16:07:02 BDT" duration-ms="3246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginTest()[pri:0, instance:com.nopcommerce.demo.testCases.Login@d86a6f]" started-at="2022-09-20T15:56:18 BDT" name="LoginTest" finished-at="2022-09-20T15:56:24 BDT" duration-ms="5462" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:com.nopcommerce.demo.testCases.Login@d86a6f]" started-at="2022-09-20T16:07:02 BDT" name="LoginTest" finished-at="2022-09-20T16:07:07 BDT" duration-ms="5503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nopcommerce.demo.testCases.Login@d86a6f]" started-at="2022-09-20T15:56:24 BDT" name="tearDown" finished-at="2022-09-20T15:56:24 BDT" duration-ms="46" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.nopcommerce.demo.testCases.Login@d86a6f]" started-at="2022-09-20T16:07:07 BDT" name="tearDown" finished-at="2022-09-20T16:07:07 BDT" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

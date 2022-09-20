@@ -15,12 +15,13 @@ public class Login extends BaseTest {
 		// Approach 1 - Page Factory
 //		LoginPagePF login = PageFactory.initElements(driver, LoginPagePF.class);
 //		login.loginToAdmin("admin@yourstore.com", "admin");
-
+		
 		// Approach 2- Page Object pattern
 		LoginPagePO loginpagepo = new LoginPagePO();
 		loginpagepo.enterEmail("admin@yourstore.com");
 		loginpagepo.enterPassword("admin");
 		loginpagepo.clickOnLogin();
+		logger.info("Login is Successful");
 		
 		// Approach 3 - External Property file
 //      WebElement emailField = driver.findElement(By.id(locators.getProperty("email_field"))); //coming from locators.properties file
