@@ -28,18 +28,22 @@
                       --- base (package)
                             --- BaseTest (class)
                       --- testcase (package)
-                            --- TestClass (class)
+                            --- TestClasses (class)
                       --- utilities (package)
                             --- ReadpropertyFile (class)  
-                  src/test/java
+                            
+                  src/test/resources
                       --- configfiles (package)
                             --- config.properties (File)
-                      --- logs (package)
-                      --- reports (package)
-                      --- testdata (package)
-                   testrunner (folder)
+                            --- locators.properties (File)
+                       --- testdata (Folder)
+                            --- Excel files
+                            
+                  --- log4j.properties (File)
+                      
+                  testrunner (folder)
                       --- testng.xml
-                   screenhots (folder)   
+                   
                       
                       
 ###  ⚫ Step 7: Add below dependencies to "pom.xml"
