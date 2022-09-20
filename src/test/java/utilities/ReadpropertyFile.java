@@ -5,15 +5,15 @@ import java.util.Properties;
 
 public class ReadpropertyFile {
 	
-	public static void main(String[]args) throws IOException {
-		FileReader file1 = new FileReader("C:\\Users\\ialmu\\eclipse-workspace\\com.nopcommerce.demo\\src\\test\\resources\\configfiles\\config.properties"); //object
+	public static void main (String[]args) throws IOException {
 
-		Properties property = new Properties(); //object
-		//Properties locators = new Properties();
-		
-		property.load(file1); //Load property file
-
-		
-		System.out.println(property.getProperty("browser"));
-	}
+	FileReader fr = new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\configfiles\\config.properties");
+	
+	Properties property = new Properties();
+	property.load(fr);
+	
+	
 }
+}
+
+

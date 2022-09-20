@@ -1,4 +1,4 @@
-package com.nopcommerce.demo.pageObjects;
+package com.nopcommerce.demo.pageFactory;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
