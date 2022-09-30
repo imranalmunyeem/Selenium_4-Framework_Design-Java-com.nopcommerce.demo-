@@ -1,5 +1,4 @@
-# com.nopcommerce.demo
-### Selenium framework design from scratch using Java
+### Selenium 4 framework design from scratch using Java
 
 ### This project contains the below features
                  External Locators property        //This property file will contains the value of the locators [Alternative of page object and page factory]
@@ -100,6 +99,16 @@
 ###  ⚫ Step 14: Data Driven Testing with Excel file
                       --- Make XLSX data file and store it under "testdata"
                       --- Create a main class named "ReadXLSdata" under untilities to read the testdata from excel file.
+
+
+###  Main differences between Selenium 4 and its previous versions! 
+     New features added in Selenium 4:
+      1)In Selenium 4, no opera and no phantom JS support anymore. Instead, user use chrome and Firefox.
+      2)With Selenium 4 we can take the screen shot of a specific element on the web page.
+      3)In Selenium 4 we can open new two tabs with two different url concurrently.
+      4)In Selenium 4, we can open two applications in one browser
+      5)In Selenium 4, we can get the dimension, height, width, etc as the location of the object on the web application.
+      6)In Selenium 4, new locators are added. New locators help find the element present nearby to other we element.
 
 
 ## Possible errors handling in Eclipse
